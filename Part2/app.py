@@ -8,7 +8,7 @@ def index():
     return render_template('base.html')
 
 
-df = pd.read_csv('https://raw.githubusercontent.com/chebbin/azure_flask_deployment/main/ComprehensiveJR.csv')
+df = pd.read_csv('/home/chevi_ebbin/docker_flask_homework/Part2/ComprehensiveJR.csv')
 @app.route('/data')
 def data(data=df):
     data = data.sample(15)
@@ -16,7 +16,7 @@ def data(data=df):
 
 @app.route('/chart')
 def chartpage():
-    df = pd.read_csv ('https://raw.githubusercontent.com/chebbin/azure_flask_deployment/main/ComprehensiveJR.csv')
+    df = pd.read_csv ('/home/chevi_ebbin/docker_flask_homework/Part2/ComprehensiveJR.csv')
     return render_template('chart.html', chart = df)
 
 
