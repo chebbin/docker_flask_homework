@@ -17,6 +17,8 @@ This screenshot shows the shell environment with the dockerfile, docker image an
 2. Create a yaml file
 3. Use the following command the create the docker app: docker-compose up --build
 
+Docker-compose allows you to configure and run multiple containers on a docker applications. 
+
 The following screenshot shows that both flask apps are running
 ![Screen Shot 2023-12-03 at 18 46 40](https://github.com/chebbin/docker_flask_homework/assets/141374142/e7eecd3d-3079-452e-857a-afcc2733f115)
 
