@@ -17,7 +17,10 @@ This screenshot shows the shell environment with the dockerfile, docker image an
 2. Create a yaml file
 3. Use the following command the create the docker app: docker-compose up --build
 
-Docker-compose allows you to configure and run multiple containers on a docker applications. 
+What are some differences between Docker and Docker-compose?
+1. Docker run can only start one container at a time, while Docker-compose allows you to configure and run multiple docker containers at once.
+2. Docker run is command line based, while docker compose reads the configuration data from a YAML file
+3. Docker Compose allows for ease of reflecting local changes in the containerized application. With Docker Compose, changes made locally are automatically mirrored in Docker without the need to rebuild the image. With Docker alone, rebuilding is necessary for changes to take effect.
 
 The following screenshot shows that both flask apps are running
 ![Screen Shot 2023-12-03 at 18 46 40](https://github.com/chebbin/docker_flask_homework/assets/141374142/e7eecd3d-3079-452e-857a-afcc2733f115)
